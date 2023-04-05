@@ -1,0 +1,24 @@
+import java.io.FileWriter;
+import com.opencsv.CSVWriter;
+public class WritingToCSV {
+   public static void main(String args[]) throws Exception {
+      CSVWriter writer = new CSVWriter(new FileWriter("D://output.csv"));
+      String product1[] = {"Product Name", "Product Price", "Item Num", "Model Number", "Product Category","Product Description"};
+      String product2[] = {"Computer and Writing Storage Desk", "$219.99", " 24398973", " UN59685-CC", "Espresso  (UN56950)","Computer and writing desk perfect for a home office,Modern furnishing style in espresso with wooden legs"};
+      String product3[] = {"Staples Gillespie 62 L-Shaped Desk", "$129.99", " 1929202", "ST28189-CC", "Sonona Cherry (28189R-CC)","The L-shaped design provides plenty of desktop space"};
+      String product4[] = {"Easy 2 Go Corner Computer Desk", "$94.99", "24343773", " WE-OF-0152G","Gray (WE-OF-0152G)", "Corner computer desk Laminate, gray finish"};
+      String product5[] = {"Easy 2 Go Student Desk with Bookcases", "$54.99", "24343774", "WE-OF-0146G","Gray (WE-OF-0146G)", "Student desk,Laminate, gray finish"};
+      String product6[] = {"Whalen Asherton 60" W L-Shaped Computer Desk", "$249.99", "2736559", "SPUS-ASHD", "Fawn Aged Oak (SPUS-ASHD)","Sturdy titanium-finished metal frame and handsome harvest oak finish complement any decor"};
+      String product7[] = {"Laminate Computer Desk", "$229.99", "24308799", "SPUS-EGDB", "Black (SPUS-EGDB)","Plenty of space for multitasking with this computer desk"};
+      String product8[] = {"Gaming Desk", "$179.99", "24522186", "60986", "White Colorway (60986)","Raised monitor platform and 6 color LED lighting strip"};
+      String product9[] = {"L-Shaped Desk", "$399.99", "24503499", "UN60420-CC", "Natural (UN60420)","Stylish laminate top in a natural finish with a sturdy metal A-frame"};
+      String product10[] = {"L Shaped Desk with Hutch", "$958.99", "147589", " SET001HC", "Hansen Cherry (SET001HC)","Laminate over Composite Wood"};
+      String product11[] = {"Office Desk", "$442.99", "24458818", "WC81272", "Gray (WC81272)","Laminated composite wood in platinum gray finish"};
+      writer.writeNext(line1);
+      writer.writeNext(line2);
+      writer.writeNext(line3);
+      writer.writeNext(line4);
+      writer.flush();
+      System.out.println("Data entered");
+   }
+}
