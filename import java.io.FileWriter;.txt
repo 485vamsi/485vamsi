@@ -14,10 +14,17 @@ public class WritingToCSV {
       String product9[] = {"L-Shaped Desk", "$399.99", "24503499", "UN60420-CC", "Natural (UN60420)","Stylish laminate top in a natural finish with a sturdy metal A-frame"};
       String product10[] = {"L Shaped Desk with Hutch", "$958.99", "147589", " SET001HC", "Hansen Cherry (SET001HC)","Laminate over Composite Wood"};
       String product11[] = {"Office Desk", "$442.99", "24458818", "WC81272", "Gray (WC81272)","Laminated composite wood in platinum gray finish"};
-      writer.writeNext(line1);
-      writer.writeNext(line2);
-      writer.writeNext(line3);
-      writer.writeNext(line4);
+      writer.writeNext(product1);
+      writer.writeNext(product2);
+      writer.writeNext(product3);
+      writer.writeNext(product4);
+      writer.writeNext(product5);
+      writer.writeNext(product6);
+      writer.writeNext(product7);
+      writer.writeNext(product8);
+      writer.writeNext(product9);
+      writer.writeNext(product10);
+      writer.writeNext(product11);
       writer.flush();
       System.out.println("Data entered");
    }
